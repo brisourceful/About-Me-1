@@ -32,7 +32,7 @@ if(responseB.toUpperCase() === 'Y') {
   document.write('<h3>That\'s right, not there yet!</h3>');
 }
 
-var respnseC = prompt(yesNo = 'Do I like pizza?');
+var respnseC = prompt(yesNo + 'Do I like pizza?');
 
 if (respnseC.toUpperCase() === 'Y') {
   console.log('Hell yes I do! It does not like me however.');
@@ -46,14 +46,18 @@ var responseD = prompt(yesNo + 'Do I like to gamble?');
 
 if (responseD.toUpperCase() === 'Y') {
   console.log('No I do not!');
+  document.write('<h5>No I do not!</h5>');
 } else {
   console.log('Right it\'s bad enough all of the money that leaves my possession and I get something.');
+  document.write('<h5>Right it\'s bad enough all of the money that leaves my possession and I get something.</h5>');
 }
 
 var responseE = prompt(yesNo + 'Is it true that i have been to the moon?');
 
 if(responseE.toUpperCase() === 'Y') {
   console.log('I wish! 12 people have been on the moon and no one since 1972.');
+  document.write('<h6>I wish! 12 people have been on the moon and no one since 1972.</h6>');
 } else {
   console.log('Yup you are right only 12 people  have been on the moon and I am not one.');
+  document.write('<h6>Yup you are right only 12 people  have been on the moon and I am not one.</h6>');
 }
