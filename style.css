@@ -1,4 +1,10 @@
+h1 {
+  font-family: serif;
+  color: red;
+}
 h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
   font-size: 20px;
+  color: blue;
 }
 /*I could do some cool stuff, but for the sake of time... I might*/
