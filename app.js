@@ -8,10 +8,28 @@ if(takeQuiz) {
   consolelog('Too bad starting anyway!');
 }
 
-var responseA = prompt('Please answer with a Y or N... \nDo I have a dog?');
+var yesNo = 'Please answer with a Y or N. \n';
+
+var responseA = prompt(yesNo + 'Do I have a dog?');
 
 if(responseA.toUpperCase() === 'Y') {
   consolelog('Sorry I do not have a dog.');
 } else {
   consolelog('You are correct!');
+}
+
+var responseB = prompt(yesNo + 'Am I older than 40?');
+
+if(responseB.toUpperCase() === 'Y') {
+  consolelog('Shame on you! Not quite.');
+} else {
+  consolelog('Thanks, you are correct!');
+}
+
+var respnseC = prompt();
+
+if (respnseC.toUpperCase() === 'Y') {
+
+} else {
+
 }
