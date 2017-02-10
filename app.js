@@ -109,19 +109,19 @@ while (takeQuiz) {
   for (var i = 0; i < 6; i++) {
     var userAns = prompt('Besides Washington, what other states do you think I lived?');
     for (var ii = 0; ii < myHomes.length; ii++) {
-      if(userAns === myHomes[ii]){
+      if(userAns !== myHomes[ii]){
+        console.log('I\'m sorry please try again. \nI have never lived in ' + userAns);
+        alert('I\'m sorry please try again. \nI have never lived in ' + userAns);
+      } else {
         correct += 1;
         console.log('You are correct, I have lived in ' + userAns);
         alert('You are correct, I have lived in ' + userAns);
-      } else {
-        console.log('I\'m sorry please try again. \nI have never lived in ' + userAns);
-        alert('I\'m sorry please try again. \nI have never lived in ' + userAns);
       }
     }
   }
   console.log(myHomes);
-  console.log('You got ' + correct + ' answers correct!');
-  takeQuiz = confirm('You got ' + correct + ' answers correct!\nTry again?');
+  console.log('You got ' + correct + ' of 7 answers correct!');
+  takeQuiz = confirm('You got ' + correct + ' of 7 answers correct!\nTry again?');
 }
 
 // done...print the page
