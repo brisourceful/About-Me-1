@@ -103,28 +103,30 @@ while (takeQuiz) {
   };
 
   // Q #6 pick a number
-  var userNum = prompt('I am thinking of a number between 1 and 20.' /*'\nYou have ' /*+ tries*/);
-// need to figure out how to exit loop if answer is correct
-  var myNum = Math.floor(Math.random() * 20 + 1);
-  for (var i = 0; i < 4; i++) {
-    userNum = parseInt(userNum);
-    //console.log(typeof userNum);
-    console.log(myNum);
-    if(userNum !== myNum) {
-      if(i !== 3) {
-        if(userNum > myNum) {
-          console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a smaller number.'/*\nYou have ' + tries + 'more tries.'*/);
-          userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a smaller number.' /*'\nYou have '+ tries + 'more tries.'*/);
-        } else {
-          console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a larger number.'/*\nYou have ' + tries + 'more tries.'*/);
-          userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a larger number.' /*'\nYou have '+ tries + 'more tries.'*/);
+  function questionF () {
+    var userNum = prompt('I am thinking of a number between 1 and 20.' /*'\nYou have ' /*+ tries*/);
+  // need to figure out how to exit loop if answer is correct
+    var myNum = Math.floor(Math.random() * 20 + 1);
+    for (var i = 0; i < 4; i++) {
+      userNum = parseInt(userNum);
+      //console.log(typeof userNum);
+      console.log(myNum);
+      if(userNum !== myNum) {
+        if(i !== 3) {
+          if(userNum > myNum) {
+            console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a smaller number.'/*\nYou have ' + tries + 'more tries.'*/);
+            userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a smaller number.' /*'\nYou have '+ tries + 'more tries.'*/);
+          } else {
+            console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a larger number.'/*\nYou have ' + tries + 'more tries.'*/);
+            userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a larger number.' /*'\nYou have '+ tries + 'more tries.'*/);
+          }
         }
+      } else {
+        correct += 1;
+        console.log('You are correct! I was thinking about ' + userNum + '.');
+        alert('You are correct! I was thinking about ' + userNum + '.');
+        break;
       }
-    } else {
-      correct += 1;
-      console.log('You are correct! I was thinking about ' + userNum + '.');
-      alert('You are correct! I was thinking about ' + userNum + '.');
-      break;
     }
   }
   // Q #7 where have I lived
