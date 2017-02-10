@@ -130,23 +130,26 @@ while (takeQuiz) {
     }
   }
   // Q #7 where have I lived
-  var myHomes = ['California', 'Texas', 'Oklahoma'];
-  var userAns = prompt('Besides Washington, what other states do you think I lived?');
-  // need to use wile less than 6
-  for (var i = 0; i < 6; i++) {
-    while(i <= myHomes.lenght) {
-      if(userAns !== myHomes[i]){
-        console.log('I\'m sorry please try again. \nI have never lived in ' + userAns);
-        alert('I\'m sorry please try again. \nI have never lived in ' + userAns);
-        // ii++;
-      } else {
-        correct += 1;
-        console.log('You are correct, I have lived in ' + userAns);
-        alert('You are correct, I have lived in ' + userAns);
-        break;
+  function questionG () {
+    var myHomes = ['California', 'Texas', 'Oklahoma'];
+    var userAns = prompt('Besides Washington, what other states do you think I lived?');
+    // need to use wile less than 6
+    for (var i = 0; i < 6; i++) {
+      while(i <= myHomes.lenght) {
+        if(userAns !== myHomes[i]){
+          console.log('I\'m sorry please try again. \nI have never lived in ' + userAns);
+          alert('I\'m sorry please try again. \nI have never lived in ' + userAns);
+          // ii++;
+        } else {
+          correct += 1;
+          console.log('You are correct, I have lived in ' + userAns);
+          alert('You are correct, I have lived in ' + userAns);
+          break;
+        }
       }
     }
   }
+
   console.log(myHomes);
   console.log('You got ' + correct + ' of 7 answers correct!');
   // document.write();
