@@ -85,8 +85,13 @@ while (takeQuiz) {
     //console.log(typeof userNum);
     if(userNum !== myNum) {
       if(i !== 3) {
-        console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of.'/*\nYou have ' + tries + 'more tries.'*/);
-        userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of.' /*'\nYou have '+ tries + 'more tries.'*/);
+        if(userNum > myNum) {
+          console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a smaller number.'/*\nYou have ' + tries + 'more tries.'*/);
+          userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a smaller number.' /*'\nYou have '+ tries + 'more tries.'*/);
+        } else {
+          console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a larger number.'/*\nYou have ' + tries + 'more tries.'*/);
+          userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of. Try a larger number.' /*'\nYou have '+ tries + 'more tries.'*/);
+        }
       }
     } else {
       console.log('You are correct! I was thinking about ' + userNum + '.');
