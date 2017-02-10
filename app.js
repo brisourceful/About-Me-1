@@ -66,22 +66,24 @@ while (takeQuiz) {
       document.write(askC + '<h4>Come on! Who doesn\'t like pizza?</h4>');
       alert('Come on! Who doesn\'t like pizza?');
     }
-  }
+  };
 
   // Q #4
-  var askD = 'Do I like to gamble?';
-  var answer = prompt(yesNo + askD).toUpperCase();
+  function questionD() {
+    var askD = 'Do I like to gamble?';
+    var answer = prompt(yesNo + askD).toUpperCase();
 
-  if (answer === 'Y') {
-    console.log('No I do not!');
-    document.write(askD + '<h5>No I do not!</h5>');
-    alert('No I do not!');
-  } else {
-    correct += 1;
-    console.log('Right it\'s bad enough all of the money that leaves my possession and I get something.');
-    document.write(askD + '<h5>Right it\'s bad enough all of the money that leaves my possession and I get something.</h5>');
-    alert('Right it\'s bad enough all of the money that leaves my possession and I get something.');
-  }
+    if (answer === 'Y') {
+      console.log('No I do not!');
+      document.write(askD + '<h5>No I do not!</h5>');
+      alert('No I do not!');
+    } else {
+      correct += 1;
+      console.log('Right it\'s bad enough all of the money that leaves my possession and I get something.');
+      document.write(askD + '<h5>Right it\'s bad enough all of the money that leaves my possession and I get something.</h5>');
+      alert('Right it\'s bad enough all of the money that leaves my possession and I get something.');
+    }
+  };
 
   // Q #5
   var askE = 'Is it true that i have been to the moon?';
