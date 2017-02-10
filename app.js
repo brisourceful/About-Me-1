@@ -52,18 +52,20 @@ while (takeQuiz) {
   };
 
   // Q #3
-  var askC = 'Do I like pizza?';
-  answer = prompt(yesNo + askC).toUpperCase();
+  function questionC() {
+    var askC = 'Do I like pizza?';
+    answer = prompt(yesNo + askC).toUpperCase();
 
-  if (answer === 'Y') {
-    correct += 1;
-    console.log('Hell yes I do! It does not like me however.');
-    document.write(askC + '<h4>Hell yes I do! It does not like me however.</h4>');
-    alert('Hell yes I do! It does not like me however.');
-  } else {
-    console.log('Come on! Who doesn\'t like pizza?');
-    document.write(askC + '<h4>Come on! Who doesn\'t like pizza?</h4>');
-    alert('Come on! Who doesn\'t like pizza?');
+    if (answer === 'Y') {
+      correct += 1;
+      console.log('Hell yes I do! It does not like me however.');
+      document.write(askC + '<h4>Hell yes I do! It does not like me however.</h4>');
+      alert('Hell yes I do! It does not like me however.');
+    } else {
+      console.log('Come on! Who doesn\'t like pizza?');
+      document.write(askC + '<h4>Come on! Who doesn\'t like pizza?</h4>');
+      alert('Come on! Who doesn\'t like pizza?');
+    }
   }
 
   // Q #4
