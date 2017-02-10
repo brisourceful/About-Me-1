@@ -21,31 +21,35 @@ while (takeQuiz) {
   //   var answer = prompt(answer + ' Is not a valid input. Please type either a Y or N').toUpperCase();
   // }
 
-  if(answer === 'Y') {
-    console.log('Sorry I do not have a dog.');
-    document.write(askA + '<h2>Sorry I do not have a dog.</h2>');
-    alert('Sorry I do not have a dog.');
-  } else {
-    correct += 1;
-    console.log('You are correct! I do not have a dog.');
-    document.write(askA + '<h2>You are correct!</h2>');
-    alert('You are correct! I do not have a dog.');
-  }
+  function questionA (){
+    if(answer === 'Y') {
+      console.log('Sorry I do not have a dog.');
+      document.write(askA + '<h2>Sorry I do not have a dog.</h2>');
+      alert('Sorry I do not have a dog.');
+    } else {
+      correct += 1;
+      console.log('You are correct! I do not have a dog.');
+      document.write(askA + '<h2>You are correct!</h2>');
+      alert('You are correct! I do not have a dog.');
+    }
+  };
 
   // Q #2
-  var askB = 'Am I older than 40?';
-  answer = prompt(yesNo + askB);
+  function questionB () {
+    var askB = 'Am I older than 40?';
+    answer = prompt(yesNo + askB);
 
-  if(answer === 'Y') {
-    console.log('Shame on you! Not quite.');
-    document.write(askB + '<h3>Shame on you! Not quite.</h3>');
-    alert('Shame on you! Not quite.');
-  } else {
-    correct += 1;
-    console.log('That\'s right, not there yet!');
-    document.write(askB + '<h3>That\'s right, not there yet!</h3>');
-    alert('That\'s right, not there yet!');
-  }
+    if(answer === 'Y') {
+      console.log('Shame on you! Not quite.');
+      document.write(askB + '<h3>Shame on you! Not quite.</h3>');
+      alert('Shame on you! Not quite.');
+    } else {
+      correct += 1;
+      console.log('That\'s right, not there yet!');
+      document.write(askB + '<h3>That\'s right, not there yet!</h3>');
+      alert('That\'s right, not there yet!');
+    }
+  };
 
   // Q #3
   var askC = 'Do I like pizza?';
@@ -121,7 +125,6 @@ while (takeQuiz) {
   var myHomes = ['California', 'Texas', 'Oklahoma'];
   var userAns = prompt('Besides Washington, what other states do you think I lived?');
   // need to use wile less than 6
-
   for (var i = 0; i < 6; i++) {
     while(i <= myHomes.lenght) {
       if(userAns !== myHomes[i]){
