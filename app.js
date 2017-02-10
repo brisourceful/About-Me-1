@@ -6,6 +6,7 @@ var takeQuiz = confirm('Hello, would you like to take a short quiz about me Chri
 if(takeQuiz) {
   console.log('Awesome! Lets get started!');
   document.write('<h1>Awesome! Lets get started!</h1>');
+  alert('Awesome! Lets get started!');
 } else {
     // console.log('Too bad starting anyway!');
     // document.write('<h1>Too bad starting anyway!</h2>');
@@ -23,10 +24,12 @@ while (takeQuiz) {
   if(answer === 'Y') {
     console.log('Sorry I do not have a dog.');
     document.write(askA + '<h2>Sorry I do not have a dog.</h2>');
+    alert('Sorry I do not have a dog.');
   } else {
     correct += 1;
     console.log('You are correct! I do not have a dog.');
     document.write(askA + '<h2>You are correct!</h2>');
+    alert('You are correct! I do not have a dog.');
   }
 
   // Q #2
@@ -36,10 +39,12 @@ while (takeQuiz) {
   if(answer === 'Y') {
     console.log('Shame on you! Not quite.');
     document.write(askB + '<h3>Shame on you! Not quite.</h3>');
+    alert('Shame on you! Not quite.');
   } else {
     correct += 1;
     console.log('That\'s right, not there yet!');
     document.write(askB + '<h3>That\'s right, not there yet!</h3>');
+    alert('That\'s right, not there yet!');
   }
 
   // Q #3
@@ -50,9 +55,11 @@ while (takeQuiz) {
     correct += 1;
     console.log('Hell yes I do! It does not like me however.');
     document.write(askC + '<h4>Hell yes I do! It does not like me however.</h4>');
+    alert('Hell yes I do! It does not like me however.');
   } else {
     console.log('Come on! Who doesn\'t like pizza?');
     document.write(askC + '<h4>Come on! Who doesn\'t like pizza?</h4>');
+    alert('Come on! Who doesn\'t like pizza?');
   }
 
   // Q #4
@@ -62,10 +69,12 @@ while (takeQuiz) {
   if (answer === 'Y') {
     console.log('No I do not!');
     document.write(askD + '<h5>No I do not!</h5>');
+    alert('No I do not!');
   } else {
     correct += 1;
     console.log('Right it\'s bad enough all of the money that leaves my possession and I get something.');
     document.write(askD + '<h5>Right it\'s bad enough all of the money that leaves my possession and I get something.</h5>');
+    alert('Right it\'s bad enough all of the money that leaves my possession and I get something.');
   }
 
   // Q #5
@@ -75,10 +84,12 @@ while (takeQuiz) {
   if(answer === 'Y') {
     console.log('I wish! 12 people have been on the moon and no one since 1972.');
     document.write(askE + '<h6>I wish! 12 people have been on the moon and no one since 1972.</h6>');
+    alert('I wish! 12 people have been on the moon and no one since 1972.');
   } else {
     correct += 1;
     console.log('Yup you are right only 12 people  have been on the moon and I am not one.');
     document.write(askE + '<h6>Yup you are right only 12 people  have been on the moon and I am not one.</h6>');
+    alert('Yup you are right only 12 people  have been on the moon and I am not one.');
   }
 
   // Q #6 pick a number
@@ -117,6 +128,7 @@ while (takeQuiz) {
         correct += 1;
         console.log('You are correct, I have lived in ' + userAns);
         alert('You are correct, I have lived in ' + userAns);
+        break;
       }
     }
   }
