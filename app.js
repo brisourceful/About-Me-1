@@ -75,6 +75,23 @@ while (takeQuiz) {
     console.log('Yup you are right only 12 people  have been on the moon and I am not one.');
     document.write(askE + '<h6>Yup you are right only 12 people  have been on the moon and I am not one.</h6>');
   }
+
+  // Q #6 pick a number
+  var userNum = prompt('I am thinking of a number between 1 and 20.' /*'\nYou have ' /*+ tries*/);
+
+  for (var i = 0; i < 4; i++) {
+    var myNum = 13;
+    userNum = parseInt(userNum);
+    //console.log(typeof userNum);
+    if(userNum !== myNum) {
+      if(i !== 3) {
+        console.log('I\'m sorry ' + userNum + ' is not the number I was thinking of.'/*\nYou have ' + tries + 'more tries.'*/);
+        userNum = prompt('I\'m sorry ' + userNum + ' is not the number I was thinking of.' /*'\nYou have '+ tries + 'more tries.'*/);
+      }
+    } else {
+      console.log('You are correct! I was thinking about ' + userNum + '.');
+    }
+  }
   takeQuiz = confirm('Try again?');
 }
 
