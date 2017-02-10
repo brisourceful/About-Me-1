@@ -3,22 +3,22 @@
 
 var takeQuiz = confirm('Hello, would you like to take a short quiz about me Chris?');
 
-  /*if(takeQuiz) {
-    console.log('Awesome! Lets get started!');
-    document.write('<h1>Awesome! Lets get started!</h1>');
-  } else {
+if(takeQuiz) {
+  console.log('Awesome! Lets get started!');
+  document.write('<h1>Awesome! Lets get started!</h1>');
+} else {
     // console.log('Too bad starting anyway!');
     // document.write('<h1>Too bad starting anyway!</h2>');
-  }*/
+}
 
 while (takeQuiz) {
   // first question if user clicks ok
   var yesNo = 'Please answer with a Y or N. \n';
   var askA = 'Do I have a dog?';
   var answer = prompt(yesNo + askA).toUpperCase();
-  while (answer != 'Y' && answer != 'N') {
-    var answer = prompt(answer + ' Is not a valid input. Please type either a Y or N').toUpperCase();
-  }
+  // while (answer != 'Y' && answer != 'N') {
+  //   var answer = prompt(answer + ' Is not a valid input. Please type either a Y or N').toUpperCase();
+  // }
 
   if(answer === 'Y') {
     console.log('Sorry I do not have a dog.');

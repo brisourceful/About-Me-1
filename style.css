@@ -8,3 +8,18 @@ h2, h3, h4, h5, h6 {
   color: blue;
 }
 /*I could do some cool stuff, but for the sake of time... I might*/
+ol {
+  display: block;
+  float: left;
+  margin: 20px 50px;
+  text-align: justify;
+}
+ul {
+  display: block;
+  float: right;
+  margin: 20px 50px;
+  text-align: justify;
+}
+label {
+  font-weight: bold;
+}
