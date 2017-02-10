@@ -86,19 +86,21 @@ while (takeQuiz) {
   };
 
   // Q #5
-  var askE = 'Is it true that i have been to the moon?';
-  var answer = prompt(yesNo + askE).toUpperCase();
+  function questionE () {
+    var askE = 'Is it true that i have been to the moon?';
+    var answer = prompt(yesNo + askE).toUpperCase();
 
-  if(answer === 'Y') {
-    console.log('I wish! 12 people have been on the moon and no one since 1972.');
-    document.write(askE + '<h6>I wish! 12 people have been on the moon and no one since 1972.</h6>');
-    alert('I wish! 12 people have been on the moon and no one since 1972.');
-  } else {
-    correct += 1;
-    console.log('Yup you are right only 12 people  have been on the moon and I am not one.');
-    document.write(askE + '<h6>Yup you are right only 12 people  have been on the moon and I am not one.</h6>');
-    alert('Yup you are right only 12 people  have been on the moon and I am not one.');
-  }
+    if(answer === 'Y') {
+      console.log('I wish! 12 people have been on the moon and no one since 1972.');
+      document.write(askE + '<h6>I wish! 12 people have been on the moon and no one since 1972.</h6>');
+      alert('I wish! 12 people have been on the moon and no one since 1972.');
+    } else {
+      correct += 1;
+      console.log('Yup you are right only 12 people  have been on the moon and I am not one.');
+      document.write(askE + '<h6>Yup you are right only 12 people  have been on the moon and I am not one.</h6>');
+      alert('Yup you are right only 12 people  have been on the moon and I am not one.');
+    }
+  };
 
   // Q #6 pick a number
   var userNum = prompt('I am thinking of a number between 1 and 20.' /*'\nYou have ' /*+ tries*/);
