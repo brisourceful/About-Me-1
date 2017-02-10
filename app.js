@@ -124,6 +124,7 @@ while (takeQuiz) {
       if(userAns !== myHomes[ii]){
         console.log('I\'m sorry please try again. \nI have never lived in ' + userAns);
         alert('I\'m sorry please try again. \nI have never lived in ' + userAns);
+        // ii++;
       } else {
         correct += 1;
         console.log('You are correct, I have lived in ' + userAns);
@@ -135,6 +136,7 @@ while (takeQuiz) {
   console.log(myHomes);
   console.log('You got ' + correct + ' of 7 answers correct!');
   takeQuiz = confirm(myHomes + '\nYou got ' + correct + ' of 7 answers correct!\nTry again?');
+  // if user clicks 'ok' game will start agian
 }
 
 // done...print the page
