@@ -95,10 +95,11 @@ while (takeQuiz) {
   // Q #6 pick a number
   var userNum = prompt('I am thinking of a number between 1 and 20.' /*'\nYou have ' /*+ tries*/);
 // need to figure out how to exit loop if answer is correct
+  var myNum = Math.floor(Math.random() * 20 + 1);
   for (var i = 0; i < 4; i++) {
-    var myNum = 13;
     userNum = parseInt(userNum);
     //console.log(typeof userNum);
+    console.log(myNum);
     if(userNum !== myNum) {
       if(i !== 3) {
         if(userNum > myNum) {
@@ -118,10 +119,11 @@ while (takeQuiz) {
   }
   // Q #7 where have I lived
   var myHomes = ['California', 'Texas', 'Oklahoma'];
+  var userAns = prompt('Besides Washington, what other states do you think I lived?');
+  // need to use wile less than 6
   for (var i = 0; i < 6; i++) {
-    var userAns = prompt('Besides Washington, what other states do you think I lived?');
-    for (var ii = 0; ii < myHomes.length; ii++) {
-      if(userAns !== myHomes[ii]){
+    while(i <= myHomes.lenght) {
+      if(userAns !== myHomes[i]){
         console.log('I\'m sorry please try again. \nI have never lived in ' + userAns);
         alert('I\'m sorry please try again. \nI have never lived in ' + userAns);
         // ii++;
@@ -135,6 +137,7 @@ while (takeQuiz) {
   }
   console.log(myHomes);
   console.log('You got ' + correct + ' of 7 answers correct!');
+  // document.write();
   takeQuiz = confirm(myHomes + '\nYou got ' + correct + ' of 7 answers correct!\nTry again?');
   // if user clicks 'ok' game will start agian
 }
