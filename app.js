@@ -121,6 +121,7 @@ while (takeQuiz) {
   var myHomes = ['California', 'Texas', 'Oklahoma'];
   var userAns = prompt('Besides Washington, what other states do you think I lived?');
   // need to use wile less than 6
+
   for (var i = 0; i < 6; i++) {
     while(i <= myHomes.lenght) {
       if(userAns !== myHomes[i]){
