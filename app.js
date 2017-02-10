@@ -83,7 +83,7 @@ while (takeQuiz) {
 
   // Q #6 pick a number
   var userNum = prompt('I am thinking of a number between 1 and 20.' /*'\nYou have ' /*+ tries*/);
-
+// need to figure out how to exit loop if answer is correct
   for (var i = 0; i < 4; i++) {
     var myNum = 13;
     userNum = parseInt(userNum);
@@ -102,6 +102,7 @@ while (takeQuiz) {
       correct += 1;
       console.log('You are correct! I was thinking about ' + userNum + '.');
       alert('You are correct! I was thinking about ' + userNum + '.');
+      break;
     }
   }
   // Q #7 where have I lived
@@ -121,7 +122,7 @@ while (takeQuiz) {
   }
   console.log(myHomes);
   console.log('You got ' + correct + ' of 7 answers correct!');
-  takeQuiz = confirm('You got ' + correct + ' of 7 answers correct!\nTry again?');
+  takeQuiz = confirm(myHomes + '\nYou got ' + correct + ' of 7 answers correct!\nTry again?');
 }
 
 // done...print the page
