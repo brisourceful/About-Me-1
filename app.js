@@ -149,6 +149,13 @@ while (takeQuiz) {
       }
     }
   }
+  questionA();
+  questionB();
+  questionC();
+  questionD();
+  questionE();
+  questionF();
+  questionG();
 
   console.log(myHomes);
   console.log('You got ' + correct + ' of 7 answers correct!');
